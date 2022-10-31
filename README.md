@@ -1,4 +1,4 @@
-# ban-jobs
+# Parte do curso/playlist [Vue.js 3 Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hYYGbV60Vq3IXYNfDk8At1), aula 8
 
 ## Project setup
 ```
