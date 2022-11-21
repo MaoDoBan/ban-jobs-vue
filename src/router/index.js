@@ -1,8 +1,8 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/Home.vue'
-import AboutView from '../views/About.vue'
-import JobsView from '../views/jobs/Jobs.vue'
-import JobDetailsView from '../views/jobs/JobDetails.vue'
+import { createRouter, createWebHistory } from "vue-router"
+import HomeView from "../views/Home.vue"
+import AboutView from "../views/About.vue"
+import JobsView from "../views/jobs/Jobs.vue"
+import JobDetailsView from "../views/jobs/JobDetails.vue"
 
 const routes = [
   {
@@ -11,20 +11,24 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/about',
-    name: 'about',
+    path: "/about",
+    name: "about",
     component: AboutView
   },
   {
-    path: '/jobs',
-    name: 'jobs',
+    path: "/jobs",
+    name: "jobs",
     component: JobsView
   },
   {
-    path: '/jobs/:id',
-    name: 'jobDetails',
+    path: "/jobs/:id",
+    name: "jobDetails",
     component: JobDetailsView,
     props: true
+  },
+  {
+    path: "/all-jobs",
+    redirect: "/jobs"
   }
 ];
 
