@@ -27,6 +27,10 @@ const routes = [
     props: true
   },
   {
+    path: "/home",
+    redirect: "/"
+  },
+  {
     path: "/all-jobs",
     redirect: "/jobs"
   }
