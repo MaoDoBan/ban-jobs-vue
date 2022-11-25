@@ -1,7 +1,12 @@
 <template>
-  <h1>{{ job.title }}</h1>
-  <p>O id é: {{ id }}</p>
-  <p>{{ job.details }}</p>
+  <div v-if="job">
+    <h1>{{ job.title }}</h1>
+    <p>O id é: {{ id }}</p>
+    <p>{{ job.details }}</p>
+  </div>
+  <div v-else>
+    <p>Carregando...</p>
+  </div>
 </template>
 
 <script>
@@ -9,7 +14,7 @@ export default {
   props: ["id"],
   data(){
     return {
-      job: {title: "", details: ""}
+      job: null
     }
   },
   mounted(){
